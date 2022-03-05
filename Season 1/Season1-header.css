@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* direction: rtl; */
+}
+body{
+    background-color: rgb(34, 34, 34);
+    background-image: url(../Image/game2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -200px;
+}
+#head{
+    z-index: 1000;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(168, 168, 168);
+    background-color: rgb(37, 37, 37);
+    padding: 0px;
+    border-bottom-left-radius: 60px;
+    border-left: 30px solid transparent;
+    border-right: 100px solid #ffaf02 !important;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+}
+#head h1{
+    margin-right: 20px;
+}
+#active,ul li:hover{
+    background: rgb(238, 103, 204) !important ;
+}

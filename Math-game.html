@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Game</title>
+    <link rel="stylesheet" href="./Math Game/Math-game.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+</head>
+<body>
+    <!-- side -->
+    <nav class="main">
+        <ul>
+          <li><a href="./math.html"><span>QuizMath</span></a></li>
+          <li><a href="./index.html"><span>Home</span></a></li>
+          <li><a href="./Season1.html"><span>Leassons</span></a></li>
+          <li><a href="./about.html"><span>درباره ما</span></a></li>
+        </ul>
+      </nav>
+    <!-- side end -->
+    <div class="clr"></div>
+    <!-- Song -->
+
+    <div class="song-container">
+
+        <div class="content">
+            <div class="right-col">
+                <p>Home Song</p>
+                <img style="width: 70px;" src="./Image/icon-play.png" id="icon">
+            </div>
+        </div>
+
+    </div>
+
+    <audio id="mySong" autoplay="true">
+        <source src="./Image/Song.mp3" type="audio/mp3">
+    </audio>
+    <div class="clr"></div>
+    <!-- End Of Song -->
+    
+    <div class="main-ui">
+        <p class="problem"></p>
+      
+        <form action="" class="our-form">
+          <input type="text" class="our-field" autocomplete="off">
+          <button>Submit</button>
+        </form>
+      
+        <p class="status">شما به <span class="points-needed">10</span> امتیاز دیگر نیاز داری, و تعداد جان باقی مانده شما <span class="mistakes-allowed">2</span> تا است</p>
+      
+        <div class="progress">
+
+          <div class="boxes">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+
+          <div class="progress-inner"></div>
+        </div>
+      
+      </div>
+      
+      <div class="overlay">
+        <div class="overlay-inner">
+          <p class="end-message"></p>
+          <button class="reset-button">از اول</button>
+        </div>
+      </div>    
+
+      <script src="./Math Game/Math-game.js"></script>
+</body>
+</html>

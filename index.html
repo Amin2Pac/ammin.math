@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <link rel="stylesheet" href="./Home/Home.css" type="text/css">
+    <title>Math Game</title>
+</head>
+<body>
+    <!-- Hobab -->
+    <ul id="hobab">
+
+        <li class="clhob"></li>
+        <li class="clhob"></li>
+        <li class="clhob"></li>
+        <li class="clhob"></li>
+        <li class="clhob"></li> <!--"5"-->
+        <li class="clhob"></li>
+        <li class="clhob"></li>
+        <li class="clhob"></li>
+        
+    </ul>
+    <!-- End Of Hobab -->
+    <!-- Song -->
+
+    <div class="song-container">
+
+        <div class="navbar">
+            <img src="./Image/logo.png" class="logo">
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>THE <br> MATH <br> GAME</h1>
+            </div>
+            <div class="right-col">
+                <p>Home Song</p>
+                <img style="width: 70px;" src="./Image/icon-play.png" id="icon">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- End Of Song -->
+    <!-- Body -->
+    <nav class="main">
+        <ul>
+          <li><a href="./math.html"><span>QuizMath</span></a></li>
+          <li><a href="./Math-game.html"><span>Game</span></a></li>
+          <li><a href="./Season1.html"><span>Leassons</span></a></li>
+          <li><a href="./about.html"><span>درباره ما</span></a></li>
+        </ul>
+      </nav>
+      <!-- End Of Body -->
+
+      <audio id="mySong" autoplay="true">
+          <source src="./Image/Song.mp3" type="audio/mp3">
+      </audio>
+
+      <!-- Script Code -->
+      <script>
+          var mySong = document.getElementById("mySong");
+          var icon = document.getElementById("icon");
+
+          icon.onclick = function(){
+              if(mySong.paused){
+                  mySong.play();
+                  icon.src ="./Image/Icon-pause.png"
+              }else{
+                  mySong.pause();
+                  icon.src = "./Image/icon-play.png"
+              }
+          }
+    </script>
+</body>
+</html>

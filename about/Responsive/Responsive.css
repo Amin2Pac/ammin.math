@@ -1,0 +1,121 @@
+@media (max-width: 1320px){
+    .container{
+        margin-right: 10%;
+        margin-top: -40px;
+        margin-bottom: 50px;
+    }
+
+}
+@media (max-width: 1120px){
+    .container{
+        margin-right: 10%;
+        margin-top: -40px;
+        margin-bottom: 50px;
+    }
+    .box:nth-child(2){
+        margin-right: 20px;
+    }
+}
+@media (max-width: 1020px){
+    .container{
+        display: block;
+        position: absolute;
+        margin-right: 25%;
+        margin-bottom: 50px;
+        margin-top: -30%;
+        height: 70%;
+    }
+    .box{
+        margin-top: 50px !important;
+        margin-right: 30% !important;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 340px;
+        height: 110%;
+    }
+}
+@media (max-width: 840px){
+    .container{
+        display: block;
+        position: absolute;
+        margin-right: 15%;
+        margin-bottom: 50px;
+        margin-top: 5%;
+    }
+    .box{
+        margin-top: 50px !important;
+        margin-right: 30% !important;
+        margin: 0;
+        padding: 0;
+        width: 340px;
+    }
+}
+@media (max-width: 700px){ 
+    .container{
+        display: block;
+        position: absolute;
+        margin-right: 20px;
+        margin-bottom: 50px;
+        margin-top: 5%;
+    }
+    .box{
+        margin-top: 50px !important;
+        margin-right: 30% !important;
+        margin: 0;
+        padding: 0;
+        width: 340px;
+    }
+}
+@media (max-width: 650px){
+    .container{
+        display: block;
+        position: absolute;
+        margin-right: 20px;
+        margin-bottom: 50px;
+        margin-top: 5%;
+    }
+    .box{
+        margin-top: 20px !important;
+        margin-right: 30% !important;
+        margin: 0;
+        padding: 0;
+        width: 340px;
+    }
+}
+@media (max-width: 580px){
+    .container{
+        display: block;
+        position: absolute;
+        margin-right: 5px;
+        margin-bottom: 50px;
+        margin-top: 5%;
+    }
+    .box{
+        margin-top: 20px !important;
+        margin-right: 30% !important;
+        margin: 0;
+        padding: 0;
+        width: 340px;
+    }
+}
+@media (max-width: 530px){
+    #head{
+        color:red ;
+    }  
+    .container{
+        display: block;
+        position: absolute;
+        margin-right: -70px;
+        margin-bottom: 50px;
+        margin-top: 5%;
+    }
+    .box{
+        margin-top: 20px !important;
+        /* margin-right: 30% !important; */
+        margin: 0;
+        padding: 0;
+        width: 340px;
+    }
+}
+

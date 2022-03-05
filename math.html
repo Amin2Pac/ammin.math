@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./TEST/math.css" type="text/css">
+    <script type="text/javascript" src="./TEST/math.js"></script>
+    <title>Math Test</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+</head>
+<body>
+    <!-- Song -->
+    <div class="song-container">
+
+        <div class="content">
+            <div class="right-col">
+                <img style="width: 70px;" src="../Image/icon-play.png" id="icon">
+            </div>
+        </div>
+
+    </div>
+    <!-- Song -->
+
+    <audio id="mySong" autoplay="true">
+        <source src="./Image/Song.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- End Of Song -->
+    <!-- Body -->
+    <nav class="main">
+        <ul>
+          <li><a href="./Math-game.html"><span>Game</span></a></li>
+          <li><a href="./index.html"><span>Home</span></a></li>
+          <li><a href="./Season1.html"><span>lessons</span></a></li>
+          <li><a href="./about.html"><span>درباره ما</span></a></li>
+        </ul>
+      </nav>
+      <!-- End Of Body -->
+    
+    <div id="container">
+        <header>
+            <h1>تست ریاضی ساده</h1>
+            <p>Test Math</p>
+        </header>
+
+        <section>
+            <div id="result"></div>
+            <form name="quizForms" onsubmit="return submitanswers();">
+
+
+            <h3> 1_ سه شهر ایران یک مجموعه را مشخص میکند؟</h3>
+            <input type="radio" name="q1" value="a">1.  صحیح  <br><br>
+            <input type="radio" name="q1" value="b">2.  غلط  <br> <br>
+            
+            <h3> 2_ هردو مربع دلخواه متشابه اند؟</h3>
+            <input type="radio" name="q2" value="a">1.  صحیح  <br> <br>
+            <input type="radio" name="q2" value="b">2.  غلط  <br> <br>
+
+            <h3> 3_ هر یک از مجموعه های زیر را با اعضایش مشخص کنید: A= {3, 5, 7} و B= {7, 9} و C= {7, 9, 11} </h3>
+            <h4> الف) A ∪ B = </h4>
+            <h4> ب) A - ( B ∩ C ) = </h4>
+            <input type="radio" name="q3" value="a">1.  &nbsp; الف:{ 3, 5, 7, 9 } __ ب:  A - (7, 9) = { 3, 5 } &nbsp; <br> <br>  
+            <input type="radio" name="q3" value="b">2.  &nbsp; الف:{ 3, 4, 3, 9 } __ ب:  A - (7, 9) = { 3, 5 } &nbsp; <br> <br>
+            <input type="radio" name="q3" value="c">3.  &nbsp; الف:{ 3, 7, 5, 9 } __ ب:  { 9, 11, 3, 5 }  &nbsp; <br> <br>
+            <input type="radio" name="q3" value="d">4.  &nbsp; الف:{ 7 } __ ب:  {  9, 11, 3, 5  } &nbsp; <br> <br>
+            
+            <h3>4_ مقدار عددی کدام گزینه با دیگر گزینه ها متفاوت است؟ </h3>
+            <input type="radio" name="q4" value="a">1. (-5) <br> <br>
+            <input type="radio" name="q4" value="b">2. 1<sup>7</sup>  <br> <br>
+            <input type="radio" name="q4" value="c">3. 7<sup>-2</sup> <br> <br>
+
+            <h3>5_ ریشه سوم عدد 27- کدام گزینه میباشد؟ </h3>
+            <input type="radio" name="q5" value="a">1. 3 <br> <br>
+            <input type="radio" name="q5" value="b">2. 3-<br> <br>
+            <input type="radio" name="q5" value="c">3. 2-<br> <br>
+
+            <h3>6_ کدام گزینه زیر یک مجموعه را مشخص میکند؟ </h3>
+            <input type="radio" name="q6" value="a">1. پنج عدد فرد متوالی <br> <br>
+            <input type="radio" name="q6" value="b">2. سه استان کشور <br> <br>
+            <input type="radio" name="q6" value="c">3. چهار عدد اول یک رقمی <br> <br>
+            <input type="radio" name="q6" value="d">4. دو عدد صحیح بین 7و12 <br> <br>
+
+            <h3>7_ ریشه های دوم عدد 36 برابر با (___) است </h3>
+            <input type="radio" name="q7" value="a">1. 6- و 6 <br> <br>
+            <input type="radio" name="q7" value="b">2. 6 و 6 <br> <br>
+            <input type="radio" name="q7" value="c">3. 6- و 6- <br> <br>
+            <br> <br>
+            
+            <input type="submit" value="submit">
+            <input type="reset" name="reset">
+
+            </form>
+        </section>
+
+        
+    </div>
+
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+              if(mySong.paused){
+                  mySong.play();
+                  icon.src ="../Image/Icon-pause.png"
+              }else{
+                  mySong.pause();
+                  icon.src = "../Image/icon-play.png"
+              }
+          }
+    </script>
+</body>
+
+<script type="text/javascript" src="./TEST/math.js"></script>
+
+</html>

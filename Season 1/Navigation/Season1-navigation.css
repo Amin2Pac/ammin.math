@@ -1,0 +1,53 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    direction: rtl;
+}
+.main{
+    width: 30px;
+}
+.main a{
+   text-decoration: none;
+}
+
+nav ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+nav ul li {
+   border-radius: 5%; 
+   font-size: 40px;
+   font-family: sans-serif;
+   background-color: rgb(107, 129, 122);
+   border: 2px solid black;
+   letter-spacing: 0.1em;
+   width: 5em;
+   height: 1.5em;
+   line-height: 1.5em;
+   position: relative;
+   overflow: hidden;
+   margin: 0.5em;
+   cursor: pointer;
+}
+
+nav ul li span {
+   color: rgb(173, 173, 173);
+   mix-blend-mode: difference;
+}
+
+nav ul li::before {
+   content: '';
+   position: absolute;
+   width: 1.5em;
+   height: inherit;
+   background-color: black;
+   border-radius: 50%;
+   top: 0;
+   left: -0.75em;
+   transition: 0.5s ease-out;
+}
+
+nav ul li:hover::before {
+   transform: scale(7);
+}
